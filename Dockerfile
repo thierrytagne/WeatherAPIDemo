@@ -4,7 +4,7 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
 # Copy csproj and restore as distinct layers
-COPY ../WeatherAPIDemo/WeatherAPIDemo.csproj ./WeatherAPIDemo/
+COPY WeatherAPIDemo.csproj ./WeatherAPIDemo/
 #COPY ../SharedModels/SharedModels.csproj ./SharedModels/
 RUN dotnet restore ./WeatherAPIDemo
 #RUN dotnet restore ./SharedModels
