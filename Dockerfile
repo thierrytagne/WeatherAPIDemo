@@ -10,7 +10,7 @@ RUN dotnet restore ./WeatherAPIDemo
 #RUN dotnet restore ./SharedModels
 
 # Copy the remaining source code
-COPY ./WeatherAPIDemo/ ./WeatherAPIDemo/
+COPY *.* ./WeatherAPIDemo/
 #COPY ./SharedModels/ ./SharedModels/
 RUN dotnet publish ./WeatherAPIDemo -c Release -o out
 
