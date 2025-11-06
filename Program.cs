@@ -45,6 +45,7 @@ app.MapGet("/api/weather/OnOff", () =>
 app.UseSwagger();
 app.UseSwaggerUI();
 
+
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
