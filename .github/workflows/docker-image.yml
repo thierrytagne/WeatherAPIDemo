@@ -29,4 +29,4 @@ jobs:
       run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
     - name: Push image
-      run: docker tag imagewebapidemo:latest moncompte/imagewebapidemo:latest && docker push moncompte/imagewebapidemo:latest
+      run: docker tag imagewebapidemo:latest ttagne/imagewebapidemo:latest && docker push ttagne/imagewebapidemo:latest
